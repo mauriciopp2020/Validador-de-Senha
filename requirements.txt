@@ -1,7 +1,3 @@
-numpy
 pandas
 streamlit
-pyplot
-requests
-hashlib
-math
+
