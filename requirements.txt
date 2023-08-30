@@ -1,4 +1,7 @@
-altair
+numpy
 pandas
 streamlit
-matplotlib.pyplot as plt
+matplotlib.pyplot
+requests
+hashlib
+math
