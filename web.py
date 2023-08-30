@@ -98,7 +98,7 @@ def main():
     #st.sidebar.image("logo.png", width=150)
 
     st.sidebar.image(
-    "logo.png",
+    "logotipo.png",
     use_column_width=True,
     width=300,
     clamp=True
