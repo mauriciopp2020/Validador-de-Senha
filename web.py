@@ -102,7 +102,7 @@ def main():
     width=300,
     clamp=True
     
-)
+    )
 
   
     st.title('Validação de Senha')
