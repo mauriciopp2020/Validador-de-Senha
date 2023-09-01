@@ -56,8 +56,8 @@ def validate_password(password, name, lastname, cpf):
     entropy_bits = calculate_entropy(password)
 
     # Verificação de engenharia social
-  #  social_engineering = name.lower() in password.lower() or lastname.lower() in password.lower() or cpf in password
-  #  if social_engineering and (name.lower() in password.lower() or lastname.lower() in password.lower() or cpf in password): 
+     social_engineering = name.lower() in password.lower() or lastname.lower() in password.lower() or cpf in password
+    if social_engineering and (name.lower() in password.lower() or lastname.lower() in password.lower() or cpf in password): 
       #  return 'Senha contém informações pessoais. Por favor, escolha outra senha.', 'red', entropy_bits, False
 
                
