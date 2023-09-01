@@ -97,7 +97,7 @@ def main():
     # st.sidebar.title("Segurança da Informação")
     #st.sidebar.image("logo.png", width=150)
     st.sidebar.image(
-    "logotipo.png",
+    "logo.png",
     use_column_width=True,
     width=300,
     clamp=True
