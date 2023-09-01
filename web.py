@@ -56,9 +56,9 @@ def validate_password(password, name, lastname, cpf):
     entropy_bits = calculate_entropy(password)
 
     # Verificação de engenharia social
-    social_engineering = name.lower() in password.lower() or lastname.lower() in password.lower() or cpf in password
-    if social_engineering and (name.lower() in password.lower() or lastname.lower() in password.lower() or cpf in password): 
-        return 'Senha contém informações pessoais. Por favor, escolha outra senha.', 'red', entropy_bits, False
+  #  social_engineering = name.lower() in password.lower() or lastname.lower() in password.lower() or cpf in password
+  #  if social_engineering and (name.lower() in password.lower() or lastname.lower() in password.lower() or cpf in password): 
+      #  return 'Senha contém informações pessoais. Por favor, escolha outra senha.', 'red', entropy_bits, False
 
                
        
@@ -66,8 +66,8 @@ def validate_password(password, name, lastname, cpf):
         compromised = check_password_compromised(password)
         if compromised is None:
             return 'Erro ao verificar a senha. Tente novamente mais tarde.', 'red', entropy_bits, False
-        elif compromised:
-            return 'Senha comprometida! Por favor, escolha outra senha.', 'red', entropy_bits, True
+       # elif compromised:
+         #   return 'Senha comprometida! Por favor, escolha outra senha.', 'red', entropy_bits, True
         elif entropy_bits >= 60:
             return 'Senha forte', 'green', entropy_bits, False
         elif entropy_bits >= 40:
