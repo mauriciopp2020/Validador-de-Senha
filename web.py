@@ -94,7 +94,7 @@ def plot_entropy_chart(entropy_bits):
 
 def main():
     #
-    st.sidebar.title("Segurança da Informação")
+    st.sidebar.subtitle("Segurança da Informação")
     #st.sidebar.image("logo.png", width=150)
     st.sidebar.image(
     "logo.png",
